@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>S²</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="u" >S²Editor</div>
+          <div id="men" >
+              <button onclick="opencode()" class="button" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trmn&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button> <br>
+              <button class="button" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Help.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+              <br>
+              <button class="button" >&nbsp;&nbsp;&nbsp;&nbsp;console&nbsp;&nbsp;&nbsp;&nbsp;</button>
+              
+              
+          </div>
+          <div onclick="start()" id="code">
+            |
+          </div>
+
+  <!-- Project -->
+  
+</body>
+</html>
+<script>
+console.log('Hello World!');
+var z=0;
+function opencode(){
+  document.getElementById('men').classList.add('hide')
+  setTimeout(du, 300)
+  console.log("1 goto")
+  setTimeout(2,dh)
+}
+function dh(){
+  document.getElementById('men').style.display ="none"
+}
+function du(){
+  document.getElementById('code').style.display ="block "
+  document.getElementById('code').classList.add('m')
+}
+loop()
+function loop(){
+
+  setTimeout(loop, 2)
+}
+dgoq()
+function dgoq(){
+document.getElementById('code').innerHTML =""
+setTimeout(dgo,200)
+} 
+
+function dgo(){
+  if (z===0) {
+    
+  
+document.getElementById('code').innerHTML ="|"
+setTimeout(dgoq,200)
+ } 
+} 
+function start(){
+  z+=1;
+  if (z===1) {
+    document.getElementById('code').innerHTML ="st|"
+    setTimeout(tf, 200)
+  }
+}
+function tf(){
+  document.getElementById('code').innerHTML ="start|"
+  setTimeout(thf, 200)
+}
+function thf(){
+  document.getElementById('code').innerHTML ="start typ|"
+  ff()
+}
+function ff(){
+  document.getElementById('code').innerHTML ="start typing |"
+  setTimeout(sf, 200)
+}
+function sf(){
+  document.getElementById('code').innerHTML ="start typing "
+  setTimeout(sg, 400)
+}
+function sg(){
+document.getElementById('code').innerHTML ='<input onclick="run()" id="txttyper" type="text"/>'
+
+}
+
+
+function run(){
+var txt = document.getElementById('txttyper').value;
+  if (txt === "C") {
+    document.getElementById('code').innerHTML ='Hello C  <input onclick="run()" id="txttyper" type="text"/>'
+  } 
+}
+</script>
+<style>
+body {
+    font-size: 15pt;
+    line-height :55px;
+    background :#565C5E;
+}
+#u{
+  color:#FFFFFF;
+  font-size :80px;
+  position :absolute ;
+  top:30vh;
+  left:50vw;
+  transform :translate(-50%,-50%);
+}
+		.button {
+		  
+		  display: inline-block;
+		  padding: 12px 24px;
+		  border-radius: 25px;
+		  background-color: #303030;
+		  color: white;
+		  text-align: center;
+		  font-size: 16px;
+		  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+		  transition: all 0.3s ease 0s;
+		  
+		  outline: none;
+		  border: none;
+		}
+		#code{
+		  display :none ;
+		  background :#000000;
+		  Color:#FFFFFF;
+		  Padding:10px;
+		  Position :absolute ;
+		  Z-index :2;
+		  Top:50vh;
+		  Left:50vw;
+		  Width :80vw;
+		  height: 80vh;
+		  transform :translate(-50%,-50%);
+		  
+		}
+		#txttyper{
+		  
+		  font: 20px sans-serif ;
+		  border: none ;
+		  outline :none ;
+		  Background :#FFFFFF00;
+		  Color:#FFFFFF;
+		}
+		#men{
+		  
+		  
+		  Position : fixed ;
+		  Top:60vh;
+		  Left:50vw;
+		  
+		  transform :translate(-50%,-50%);
+		}
+
+		.button:hover {
+		  transform: translateY(-5px);
+		  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+		  background-color: #3e8e41;
+		}
+
+		.button:active {
+		  transform: translateY(5px);
+		  box-shadow: none;
+		  background-color: #1e8449;
+		} 
+.hide{
+  opacity :0;
+
+  animation:hide 3s ease-in-out  ;
+}
+@keyframes hide{
+  0%{
+    Opacity :1;
+  }
+  100%{
+    opacity :1;
+    
+    left:-200px;
+  }
+}
+.m{
+  animation :anime 2s;
+}
+@keyframes anime{
+  0%{
+    left:150vw;
+  }
+  100%{
+    left:50vw;
+  }
+}
+</style>
